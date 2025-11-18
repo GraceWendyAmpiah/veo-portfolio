@@ -1,16 +1,16 @@
 {
   "items": [
     {
-      "id": "demo-001",
-      "image": "https://placehold.co/600x400/222/fff?text=Veo+Input+Image",
-      "prompt": "A cinematic drone shot flying over a futuristic cyberpunk city at night, neon lights reflecting off wet pavement, 8k resolution.",
-      "video": "https://www.w3schools.com/html/mov_bbb.mp4"
+      "id": "demo-001-Halloween Bus Tour",
+      "image": "/uploads/image_202511182331.jpeg",
+      "prompt": "Animate Barnaby the bright red bus, centered on a suburban street at twilight, looking directly at the viewer with wide, sparkling, excited headlight-eyes and a big, friendly grin. The background houses are subtly and cheerfully decorated for Halloween in a \"Contemporary Children's Animation\" style with simplified forms and bright colors. Barnaby's body should subtly bounce with excitement as he speaks. The animation should capture Barnaby's energetic and welcoming personality as he introduces the tour.",
+      "video": "/uploads/animate_barnaby_the_202511182332.mp4"
     },
     {
-      "id": "demo-002",
-      "image": "https://placehold.co/600x400/444/fff?text=Another+Input",
-      "prompt": "Close up of a mechanical eye opening, intricate gears, steam punk aesthetic, volumetric lighting.",
-      "video": "https://www.w3schools.com/html/mov_bbb.mp4"
+      "id": "demo-002-Halloween Bus Tour",
+      "image": "/uploads/image_202511182332.jpeg",
+      "prompt": "Animate Barnaby the bright red bus, positioned prominently and centrally in front of a \"Spooky Ghost House\" at twilight, his headlight-eyes comically wide and his entire body gently shaking and rattling as if shivering. The house should be decorated in a fun, child-friendly Halloween style, with two friendly white ghosts waving from its windows. The ghosts should softly say \"BOO!\" with subtle visual text appearing on screen in a friendly, bubbly font. Barnaby's shiver should be exaggerated and comical, reflecting his \"Woooah! That made me shiver my bumpers!\" narration, all in the \"Contemporary Children's Animation\" style with bright, saturated colors.",
+      "video": "/uploads/animate_barnaby_the_202511182332-1-.mp4"
     }
   ]
 }
