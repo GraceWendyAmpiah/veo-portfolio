@@ -1,0 +1,27 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "portfolio"
+    label: "Portfolio Items"
+    files:
+      - name: "items"
+        label: "Portfolio Data"
+        file: "data/portfolio.json"
+        description: "Manage your Veo 3 portfolio items here"
+        fields:
+          - name: "items"
+            label: "Projects"
+            widget: "list"
+            collapsed: false
+            minimize_collapsed: true
+            summary: "{{prompt}}"
+            fields:
+              - {label: "ID", name: "id", widget: "string"}
+              - {label: "Input Image", name: "image", widget: "image"}
+              - {label: "Prompt Text", name: "prompt", widget: "text"}
+              - {label: "Generated Video", name: "video", widget: "file"}

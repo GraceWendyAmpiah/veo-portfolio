@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "id": "demo-001",
+      "image": "https://placehold.co/600x400/222/fff?text=Veo+Input+Image",
+      "prompt": "A cinematic drone shot flying over a futuristic cyberpunk city at night, neon lights reflecting off wet pavement, 8k resolution.",
+      "video": "https://www.w3schools.com/html/mov_bbb.mp4"
+    },
+    {
+      "id": "demo-002",
+      "image": "https://placehold.co/600x400/444/fff?text=Another+Input",
+      "prompt": "Close up of a mechanical eye opening, intricate gears, steam punk aesthetic, volumetric lighting.",
+      "video": "https://www.w3schools.com/html/mov_bbb.mp4"
+    }
+  ]
+}
