@@ -65,6 +65,12 @@
       "id": "demo-011-Peter Rabbit",
       "image": "/uploads/image_202511191416-1-.jpeg",
       "video": "/uploads/3d_pixar_animation_202511191351.mp4"
+    },
+    {
+      "id": "demo-012-Peter Rabbit",
+      "image": "/uploads/image_202511191416-2-.jpeg",
+      "prompt": "3D pixar animation of the rendition of the classic story \"The adventures of Peter Rabbit.\" Peter gives the radish leaves a hard pull. The leaves gives out with a pop sounds and at its roots show a bright red radish.. No weird transitions, cuts, jumps or animations.",
+      "video": "/uploads/3d_pixar_animation_202511191352-1-.mp4"
     }
   ]
 }
