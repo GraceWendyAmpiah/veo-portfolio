@@ -17,6 +17,12 @@
       "image": "/uploads/1.jpg",
       "prompt": "Animate Barnaby the bright red bus, centrally positioned on a suburban street at twilight, with a comically wide-eyed expression of curious wonder and intrigue, his mouth slightly open as if listening. A bright light should emanate from a silly-looking UFO perched on the roof of a prominent \"Alien Spaceship House\" in the background, drawing Barnaby's gaze. The UFO's lights should subtly blink, and a faint, playful \"Beep boop!\" sound (with visual text \"Beep boop!\" appearing on screen in a friendly, bubbly font) should emanate from the house, piquing Barnaby's curiosity. The house should be decorated in the \"Contemporary Children's Animation\" style with bright, saturated colors and bold outlines. The name \"Alien Spaceship House\" should appear on screen in a friendly, bubbly font when first introduced.",
       "video": "/uploads/animate_barnaby_the_202511190202.mp4"
+    },
+    {
+      "id": "demo-004-Koala's Halloween",
+      "prompt": "The koala in a ghost costume, a platypus fairy princess, and an owl wizard holding a broom, walk happily down a neighborhood path lined with glowing jack-o'-lanterns at dusk, as seen in the starting image. The full moon is rising prominently in the background, casting a soft, magical glow. Other animal children in costumes are visible trick-or-treating in the distance. The camera follows them in a tracking shot, showing their joyful forward movement.",
+      "image": "/uploads/image_202511191024-1-.jpeg",
+      "video": "/uploads/the_koala_in_202511190210.mp4"
     }
   ]
 }
