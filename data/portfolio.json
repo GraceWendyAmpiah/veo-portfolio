@@ -29,6 +29,12 @@
       "image": "/uploads/image_202511191038.jpeg",
       "prompt": "They dance to a happy song. With funny and silly facial expressions that are in sync with the song. A look of excitement on their faces. No slow dance or standing still. No awkward body movement. No weird transitions, animations, jumps or cuts.",
       "video": "/uploads/they_dance_to_202511191031.mp4"
+    },
+    {
+      "prompt": "A bright and colorful cartoon koala stands in his Halloween-decorated bedroom, holding a white sheet as seen in the starting image. He tries to throw the sheet over his head to make a ghost costume but comically gets tangled in it. He wiggles and stumbles in place, his arms and legs getting caught in the fabric, showing a cute, determined expression. The camera is locked in a medium shot.",
+      "id": "demo-006-Koala's Halloween",
+      "image": "/uploads/image_202511191025.jpeg",
+      "video": "/uploads/a_bright_and_202511190208.mp4"
     }
   ]
 }
