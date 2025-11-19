@@ -23,6 +23,12 @@
       "prompt": "The koala in a ghost costume, a platypus fairy princess, and an owl wizard holding a broom, walk happily down a neighborhood path lined with glowing jack-o'-lanterns at dusk, as seen in the starting image. The full moon is rising prominently in the background, casting a soft, magical glow. Other animal children in costumes are visible trick-or-treating in the distance. The camera follows them in a tracking shot, showing their joyful forward movement.",
       "image": "/uploads/image_202511191024-1-.jpeg",
       "video": "/uploads/the_koala_in_202511190210.mp4"
+    },
+    {
+      "id": "demo-005-Koala's Halloween",
+      "image": "/uploads/image_202511191038.jpeg",
+      "prompt": "They dance to a happy song. With funny and silly facial expressions that are in sync with the song. A look of excitement on their faces. No slow dance or standing still. No awkward body movement. No weird transitions, animations, jumps or cuts.",
+      "video": "/uploads/they_dance_to_202511191031.mp4"
     }
   ]
 }
