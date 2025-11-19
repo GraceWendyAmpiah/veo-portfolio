@@ -268,13 +268,29 @@
         items.slice().reverse().forEach(item => {
             const card = document.createElement('div');
             card.className = 'card';
-            const imgSrc = (item?.image && item.image.startsWith('/')) ? item.image : (item?.image || 'https://placehold.co/600x400?text=No+Image');
-            card.innerHTML = `
-                <img class="card-image" src="${imgSrc}" alt="Preview" loading="lazy">
-                <div class="card-content">
-                    <div class="card-prompt">"${item?.prompt || 'No prompt'}"</div>
-                </div>
-            `;
+
+            const img = document.createElement('img');
+            img.className = 'card-image';
+            const imgPath = item?.image || '';
+            img.src = imgPath || 'https://placehold.co/600x400?text=No+Image';
+            img.alt = 'Preview';
+            img.loading = 'lazy';
+
+            // Fallback: if initial src fails, try prefixing with /public (covers incorrect publish folder)
+            img.addEventListener('error', () => {
+                if (imgPath && imgPath.startsWith('/uploads')) {
+                    img.src = '/public' + imgPath;
+                } else {
+                    img.src = 'https://placehold.co/600x400?text=No+Image';
+                }
+            });
+
+            const content = document.createElement('div');
+            content.className = 'card-content';
+            content.innerHTML = `<div class="card-prompt">"${item?.prompt || 'No prompt'}"</div>`;
+
+            card.appendChild(img);
+            card.appendChild(content);
             card.addEventListener('click', () => openModal(item));
             gallery.appendChild(card);
         });
@@ -282,34 +298,27 @@
 
     // Modal Actions
     function openModal(item) {
-        modalVideo.src = (item?.video && item.video.startsWith('/')) ? item.video : (item?.video || '');
-        modalImage.src = (item?.image && item.image.startsWith('/')) ? item.image : (item?.image || '');
-        modalPrompt.textContent = item?.prompt || '';
-        
-        modal.classList.add('active');
-        document.body.style.overflow = 'hidden';
-        modalVideo.play().catch(e => console.log("Autoplay blocked or failed to play:", e));
-    }
+        const videoUrl = item?.video || '';
+        // Only use <video> for .mp4 sources. If not .mp4, hide the video element.
+        if (videoUrl && /\.mp4($|\?)/i.test(videoUrl)) {
+            modalVideo.style.display = '';
+            modalVideo.src = videoUrl;
+            modalVideo.load();
+            modalVideo.play().catch(e => console.log("Autoplay blocked or failed to play:", e));
+        } else {
+            modalVideo.pause();
+            modalVideo.src = '';
+            modalVideo.style.display = 'none';
+        }
 
-    function closeModal() {
-        modal.classList.remove('active');
-        document.body.style.overflow = '';
-        modalVideo.pause();
-        modalVideo.src = '';
-    }
+        const imageUrl = item?.image || '';
+        modalImage.src = imageUrl || 'https://placehold.co/600x400?text=No+Image';
+        modalImage.onerror = () => {
+            if (imageUrl && imageUrl.startsWith('/uploads')) {
+                modalImage.src = '/public' + imageUrl;
+            } else {
+                modalImage.src = 'https://placehold.co/600x400?text=No+Image';
+            }
+        };
 
-    // Event Listeners
-    closeBtn.addEventListener('click', closeModal);
-    modal.addEventListener('click', (e) => {
-        if (e.target === modal) closeModal();
-    });
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && modal.classList.contains('active')) closeModal();
-    });
-
-    // Initialize
-    loadPortfolio();
-</script>
-
-</body>
-</html>
+        modalPrompt.textContent = item?.prompt || ''
