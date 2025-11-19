@@ -41,6 +41,12 @@
       "id": "demo-007-The Gruffalo",
       "image": "/uploads/image_202511191307.jpeg",
       "video": "/uploads/pixarstyle_animation_this_202511191258-1-.mp4"
+    },
+    {
+      "id": "demo-008-The Gruffalo",
+      "prompt": "Pixar-style animation. This is a rendition of the classic public domain story, the Gruffalo. The mouse talks about the monster he saw in his nightmare. He makes exaggerated hand gestures. No weird transitions, animations, jumps, or cut.",
+      "image": "/uploads/image_202511191307-1-.jpeg",
+      "video": "/uploads/pixarstyle_animation_this_202511191254.mp4"
     }
   ]
 }
