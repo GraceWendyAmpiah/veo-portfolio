@@ -35,6 +35,12 @@
       "id": "demo-006-Koala's Halloween",
       "image": "/uploads/image_202511191025.jpeg",
       "video": "/uploads/a_bright_and_202511190208.mp4"
+    },
+    {
+      "prompt": "Pixar-style animation. This is a rendition of the classic public domain story, the Gruffalo. The snake scurries away. No weird transitions, animations, jumps, or cut.",
+      "id": "demo-007-The Gruffalo",
+      "image": "/uploads/image_202511191307.jpeg",
+      "video": "/uploads/pixarstyle_animation_this_202511191258-1-.mp4"
     }
   ]
 }
