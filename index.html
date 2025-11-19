@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veo 3 Prompt Portfolio</title>
+    <title>Grace Wendy | AI Prompt Engineer Portfolio</title>
     <!-- Include Netlify Identity Widget -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <style>
@@ -25,13 +25,49 @@
             padding: 2rem;
         }
 
+        /* --- UPDATED HEADER STYLES --- */
         header {
-            max-width: 1200px;
-            margin: 0 auto 3rem;
+            max-width: 900px;
+            margin: 0 auto 4rem;
             text-align: center;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #eee;
         }
 
-        h1 { font-weight: 800; letter-spacing: -0.03em; margin-bottom: 0.5rem; }
+        h1 { 
+            font-weight: 800; 
+            letter-spacing: -0.03em; 
+            margin-bottom: 1rem; 
+            font-size: 2.5rem;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #444;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .bio {
+            font-size: 1rem;
+            color: #666;
+            max-width: 750px;
+            margin: 0 auto 2rem;
+            line-height: 1.8;
+        }
+
+        .contact-bar {
+            display: inline-flex;
+            gap: 1.5rem;
+            background: #f0f4ff;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            color: var(--accent);
+            font-weight: 600;
+        }
+        /* --------------------------- */
+
         p.subtitle { color: #666; }
 
         /* Grid Layout */
@@ -195,8 +231,29 @@
 <body>
 
 <header>
-    <h1>Veo 3 Generations</h1>
-    <p class="subtitle">Exploring the bridge between text, image, and video.</p>
+    <h1>Grace Wendy Ampiah Otoo</h1>
+    <p class="tagline">Ai Expert | Digital Content Specialist | Engineer</p>
+    
+    <div class="bio">
+        <p>
+            I combine technical precision with creative storytelling to drive digital growth. 
+            Leveraging tools like <strong>Google Flow</strong>, <strong>Veo 3</strong>, and <strong>ElevenLabs</strong>, 
+            I engineered an automated content strategy that scaled a children's educational channel to 
+            <strong>133,000+ organic views</strong> in under 5 months.
+        </p>
+        <br>
+        <p>
+            My expertise lies in transforming raw text into compelling, high-retention video narratives.
+            I am passionate about applying these skills to support <strong>Muna TV's</strong> mission 
+            of empowering African youth through education, creativity, and authentic storytelling.
+        </p>
+    </div>
+
+    <div class="contact-bar">
+        <span>gracewampiah@gmail.com</span>
+        <span>•</span>
+        <span>05544 07085</span>
+    </div>
 </header>
 
 <main class="gallery" id="gallery">
@@ -269,6 +326,7 @@
         items.slice().reverse().forEach(item => {
             const card = document.createElement('div');
             card.className = 'card';
+            // Reverted to uploaded version logic: adding 'public' prefix
             const imgSrc = (item?.image && item.image.startsWith('/')) ? 'public' + item.image : (item?.image || 'https://placehold.co/600x400?text=No+Image');
             card.innerHTML = `
                 <img class="card-image" src="${imgSrc}" alt="Preview" loading="lazy">
@@ -283,6 +341,7 @@
 
     // Modal Actions
     function openModal(item) {
+        // Reverted to uploaded version logic: adding 'public' prefix
         const videoPath = (item?.video && item.video.startsWith('/')) ? 'public' + item.video : (item?.video || '');
         const imagePath = (item?.image && item.image.startsWith('/')) ? 'public' + item.image : (item?.image || '');
 
