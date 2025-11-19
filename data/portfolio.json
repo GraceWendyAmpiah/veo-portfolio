@@ -53,6 +53,12 @@
       "id": "demo-009-The Gruffalo",
       "image": "/uploads/image_202511191307-2-.jpeg",
       "video": "/uploads/pixarstyle_animation_this_202511191258.mp4"
+    },
+    {
+      "id": "demo-010-Peter Rabbit",
+      "image": "/uploads/image_202511191416.jpeg",
+      "prompt": "3D pixar animation of the rendition of the classic story \"The adventures of Peter Rabbit.\" Mr. Mcgregor's gently waters the rows of carrots with a watering  can in his garden and moves to the next lane to water the rasish. No weird transitions, cuts, jumps or animations.",
+      "video": "/uploads/3d_pixar_animation_202511191352.mp4"
     }
   ]
 }
