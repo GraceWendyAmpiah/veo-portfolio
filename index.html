@@ -157,6 +157,7 @@
             height: 100%;
             max-height: 80vh;
             display: block;
+            object-fit: contain;
         }
 
         .modal-details {
@@ -268,7 +269,7 @@
         items.slice().reverse().forEach(item => {
             const card = document.createElement('div');
             card.className = 'card';
-            const imgSrc = (item?.image && item.image.startsWith('/')) ? item.image : (item?.image || 'https://placehold.co/600x400?text=No+Image');
+            const imgSrc = (item?.image && item.image.startsWith('/')) ? 'public' + item.image : (item?.image || 'https://placehold.co/600x400?text=No+Image');
             card.innerHTML = `
                 <img class="card-image" src="${imgSrc}" alt="Preview" loading="lazy">
                 <div class="card-content">
@@ -282,20 +283,43 @@
 
     // Modal Actions
     function openModal(item) {
-        modalVideo.src = (item?.video && item.video.startsWith('/')) ? item.video : (item?.video || '');
-        modalImage.src = (item?.image && item.image.startsWith('/')) ? item.image : (item?.image || '');
+        const videoPath = (item?.video && item.video.startsWith('/')) ? 'public' + item.video : (item?.video || '');
+        const imagePath = (item?.image && item.image.startsWith('/')) ? 'public' + item.image : (item?.image || '');
+
+        // 1. Handle Video Source - Clear and add new source
+        modalVideo.innerHTML = ''; // Clear previous sources
+        if (videoPath && !videoPath.includes('youtu.be')) {
+            // For local .mp4 files, create and append a source element
+            const source = document.createElement('source');
+            source.src = videoPath;
+            source.type = 'video/mp4'; // Explicitly set MIME type for robust playback
+            modalVideo.appendChild(source);
+            modalVideo.load(); // Load the new source
+        } else if (videoPath.includes('youtu.be')) {
+            // YouTube links cannot be played in a standard <video> element
+            // This would require an iframe implementation instead
+            console.warn('YouTube links require iframe implementation');
+        }
+
+        // 2. Handle Image and Prompt
+        modalImage.src = imagePath || '';
         modalPrompt.textContent = item?.prompt || '';
         
+        // 3. Show Modal
         modal.classList.add('active');
         document.body.style.overflow = 'hidden';
-        modalVideo.play().catch(e => console.log("Autoplay blocked or failed to play:", e));
+        
+        // 4. Attempt to play video (will be blocked by autoplay policies in most browsers)
+        if (videoPath && !videoPath.includes('youtu.be')) {
+            modalVideo.play().catch(e => console.log("Autoplay blocked or failed to play:", e));
+        }
     }
 
     function closeModal() {
         modal.classList.remove('active');
         document.body.style.overflow = '';
         modalVideo.pause();
-        modalVideo.src = '';
+        modalVideo.innerHTML = ''; // Clear source elements on close
     }
 
     // Event Listeners
