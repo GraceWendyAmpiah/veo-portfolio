@@ -83,6 +83,12 @@
       "id": "demo-014-Ariel the Mermaid",
       "image": "/uploads/image_202511211005.jpeg",
       "video": "/uploads/animate_the_corrected_202511202149_v6q5c.mp4"
+    },
+    {
+      "id": "demo-015-Ariel the Mermaid",
+      "prompt": "3D Pixar-style animation of Ariel searching for Inky, building directly from the provided image. Ariel scans the rocky area with a curious and playful expression, her hand on her chin. Her mouth animates as she says, \"His name is Inky the Octopus. Let's see... where could he be?\" As she says his name, the text \"Inky the Octopus\" appears on screen in a friendly, bubbly font that quickly fades. Her eyes then lock onto the specific rock with cartoon eyes. Her expression becomes intrigued as she points directly at it, her mouth animating as she thoughtfully says, \"Hmm, that rock over there looks a little wobbly.\" As she points, the \"rock\" with the large, friendly eyes gives a distinct but subtle wobble back and forth. Its eyes blink nervously, giving away the disguise and setting up the reveal. In the background, other rocks with eyes subtly blink, making the whole area feel alive with the game. The animation is filled with playful suspense and discovery.",
+      "image": "/uploads/image_202511211006.jpeg",
+      "video": "/uploads/3d_pixarstyle_animation_202511210951_jjwib.mp4"
     }
   ]
 }
