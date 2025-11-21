@@ -71,6 +71,12 @@
       "image": "/uploads/image_202511191416-2-.jpeg",
       "prompt": "3D pixar animation of the rendition of the classic story \"The adventures of Peter Rabbit.\" Peter gives the radish leaves a hard pull. The leaves gives out with a pop sounds and at its roots show a bright red radish.. No weird transitions, cuts, jumps or animations.",
       "video": "/uploads/3d_pixar_animation_202511191352-1-.mp4"
+    },
+    {
+      "id": "demo-013-Ariel the Mermaid",
+      "prompt": "3d pixar-style animation. This is a spin off of the classic \" The little Mermaid\" story. Ariel gentles puts the starfish back into the corals reefs. A warm smile on ariel's face.. No weird transitions, animations, cuts or jumps.\n",
+      "image": "/uploads/image_202511211030.jpeg",
+      "video": "/uploads/3d_pixarstyle_animation_202511202141_kbtsd.mp4"
     }
   ]
 }
