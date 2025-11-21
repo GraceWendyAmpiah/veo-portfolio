@@ -77,6 +77,12 @@
       "prompt": "3d pixar-style animation. This is a spin off of the classic \" The little Mermaid\" story. Ariel gentles puts the starfish back into the corals reefs. A warm smile on ariel's face.. No weird transitions, animations, cuts or jumps.\n",
       "image": "/uploads/image_202511211030.jpeg",
       "video": "/uploads/3d_pixarstyle_animation_202511202141_kbtsd.mp4"
+    },
+    {
+      "prompt": "Animate the corrected image in a 3D Pixar-style. Ariel should be at the forefront, looking directly at the viewer with an enthusiastic, inviting smile, gesturing outwards with both hands as if presenting her friends. Delia, Sheldon, and Inky should all be present and also looking towards the viewer with friendly expressions. As Ariel narrates, 'Subscribe to BGContents Kids to have more fun with me!', the text 'BGContents Kids' should appear on screen in a friendly, bubbly font, perhaps with a subtle sparkle effect. The background coral reef should have gentle, ambient movements. Ariel's expression should convey excitement and encouragement, inviting  to engage further with the content. The characters are adults. There are no minors in the scenes.",
+      "id": "demo-014-Ariel the Mermaid",
+      "image": "/uploads/image_202511211005.jpeg",
+      "video": "/uploads/animate_the_corrected_202511202149_v6q5c.mp4"
     }
   ]
 }
